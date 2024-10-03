@@ -23,8 +23,9 @@
 <body>
     <div class="weatherApp">
         <header>
-            <form class="search-form">
-                <input type="search" placeholder="Enter a city.." required class="search-form-input" />
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city.." required class="search-form-input"
+                    id="search-form-input" />
                 <input type="submit" value=" " class="search-form-button" />
             </form>
         </header>
@@ -33,7 +34,7 @@
             <div class="weatherAppData">
 
                 <div>
-                    <h1 class="cities"> Paris </h1>
+                    <h1 class="cities" id="cities"> Paris </h1>
                     <p class="cityDetails"> Thursday 13:01, cloudy <br />
                         Humidity: <strong> 62%,</strong> Wind: <strong>3.13km/h</strong></p>
                 </div>
@@ -54,6 +55,7 @@
                 class="footerLinks" href="https://kaymas-weatherapp.netlify.app/" target="_blank">hosted on Netlify </a>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
