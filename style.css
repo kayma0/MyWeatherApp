@@ -16,7 +16,7 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
-  font-family: Comic Neue;
+  font-family: Caveat;
   border: 2px solid #fcefbd;
 }
 
@@ -35,7 +35,7 @@ header {
   border-radius: 6px;
   width: 80%;
   padding: 15px 20px;
-  font-family: Comic Neue;
+  font-family: Caveat;
   font-size: large;
   border: 2px solid #fcefbd;
 }
@@ -68,6 +68,7 @@ footer {
   border-top: 1px solid #fcefbd;
   padding: 30px 0 0 0;
   text-align: center;
+  font-size: 19px;
 }
 
 main {
@@ -81,16 +82,32 @@ main {
 
 .cities {
   margin: 0;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 48px;
 }
 
 .cityDetails {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 200;
 }
 
 .temp_container {
   display: flex;
+}
+
+.temp_value {
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.temp_icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.temp_unit {
+  margin-top: 15px;
+  font-size: 23px;
 }
