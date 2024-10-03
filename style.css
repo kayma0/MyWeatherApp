@@ -20,6 +20,11 @@ body {
   border: 2px solid #fcefbd;
 }
 
+header {
+  border-bottom: 1px solid #fcefbd;
+  padding: 0 0 30px 0;
+}
+
 .search-form-input {
   background: radial-gradient(
     circle at 10% 20%,
@@ -36,9 +41,9 @@ body {
 }
 
 .search-form-button {
-  border: none;
-  padding: 15px 28px;
+  padding: 15px 30px;
   border-radius: 6px;
+  margin-left: 5px;
   font-family: Comic Neue;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/176/original/k_searchIcon.png?1727987646");
   background-size: 40px 40px;
@@ -57,4 +62,10 @@ body {
   font-style: italic;
   color: black;
   cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #fcefbd;
+  padding: 30px 0 0 0;
+  text-align: center;
 }
