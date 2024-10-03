@@ -10,3 +10,13 @@ body {
   padding: 30px;
   font-family: Comic Neue;
 }
+
+.search-form-input {
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-family: Comic Neue;
+  font-size: large;
+}
