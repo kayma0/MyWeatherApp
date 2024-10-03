@@ -84,6 +84,7 @@ main {
   margin: 0;
   font-size: 48px;
   line-height: 48px;
+  animation: moveUpDown 2s infinite ease-in-out;
 }
 
 .cityDetails {
@@ -110,4 +111,15 @@ main {
 .temp_unit {
   margin-top: 15px;
   font-size: 23px;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
