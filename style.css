@@ -50,3 +50,11 @@ body {
 
   cursor: pointer;
 }
+
+.footerLinks {
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+  cursor: pointer;
+}
