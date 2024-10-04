@@ -21,4 +21,4 @@ function handleSearchSubmit(event) {
 let searchformElement = document.querySelector("#search-form");
 searchformElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Aberdeen");
+searchCity("Aberdeen"); //to make this the default city when its loaded
