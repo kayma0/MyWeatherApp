@@ -85,12 +85,13 @@ main {
   font-size: 48px;
   line-height: 48px;
   animation: moveUpDown 2s infinite ease-in-out;
+  /* text-shadow: 50px 30px 50px rgba(0, 0, 0, 0.888); */
 }
 
 .cityDetails {
   font-size: 18px;
-  line-height: 20px;
-  font-weight: 200;
+  line-height: 24px;
+  font-weight: 100;
 }
 
 .temp_container {

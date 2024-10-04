@@ -2,11 +2,17 @@ function updateWeatherinfo(response) {
   let temperatureElement = document.querySelector("#temp_value");
   let cityElement = document.querySelector("#cities");
 
+  cityElement.innerHTML = response.data.city;
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+
   let cityTempDescription = document.querySelector("#temp_description");
   cityTempDescription.innerHTML = response.data.condition.description;
 
-  cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  let cityHumidity = document.querySelector("#T_humidity");
+  cityHumidity.innerHTML = `${response.data.temperature.humidity}%`;
+
+  let cityWind = document.querySelector("#T_wind");
+  cityWind.innerHTML = `${response.data.wind.speed}km/h`;
 }
 
 function searchCity(city) {
