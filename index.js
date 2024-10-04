@@ -1,6 +1,10 @@
 function updateWeatherinfo(response) {
   let temperatureElement = document.querySelector("#temp_value");
   let cityElement = document.querySelector("#cities");
+
+  let cityTempDescription = document.querySelector("#temp_description");
+  cityTempDescription.innerHTML = response.data.condition.description;
+
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
 }
