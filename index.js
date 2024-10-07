@@ -19,7 +19,9 @@ function updateWeatherinfo(response) {
   cityTime.innerHTML = formatDate(date);
 
   let icon = document.querySelector("#t_icon");
-  icon.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/293/original/Subject_5.png?1728053061" class="temp_icon">`;
+  // icon.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/293/original/Subject_5.png?1728053061" class="temp_icon">`;
+
+  let weatherDescription = response.data.condition.icon.toLowerCase();
 
   let t_iconMapping = {
     "clear-sky-day":
@@ -59,6 +61,12 @@ function updateWeatherinfo(response) {
     "mist-night":
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/760/original/k_mist_night.png?1728338403",
   };
+
+  let iconSrc =
+    t_iconMapping[weatherDescription] ||
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/293/original/Subject_5.png?1728053061";
+
+  icon.innerHTML = `<img src="${iconSrc}" class="temp_icon">`;
 }
 
 function formatDate(date) {
