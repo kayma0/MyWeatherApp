@@ -126,3 +126,7 @@ main {
     transform: translateY(-20px);
   }
 }
+
+.temp_description {
+  color: aqua;
+}
