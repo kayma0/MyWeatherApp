@@ -9,6 +9,34 @@ body {
   background-size: cover;
   background-position: fixed;
 }
+
+.start {
+  font-family: Caveat;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+  /* Adjust the gap between images as needed */
+  justify-items: center;
+  /* padding: 20px;
+        margin: 0 auto;
+        animation: all 200ms ease-in-out;
+        border-bottom: 4px solid #F0A5BB; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start .clouds_1 {
+  width: 70px;
+  height: 55px;
+}
+
+.start h1 {
+  text-decoration: line-through #bbdee3;
+  margin-top: 80px;
+}
+
 .weatherApp {
   background: #bbdee3;
   max-width: 600px;
