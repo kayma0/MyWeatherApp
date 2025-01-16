@@ -158,3 +158,10 @@ main {
 .temp_description {
   color: aqua;
 }
+
+.weather-forecast-date {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
+}
